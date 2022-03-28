@@ -1,3 +1,5 @@
+mod sol_001;
+
 fn main() {
-    println!("Hello, world!");
+    sol_001::slove();
 }
