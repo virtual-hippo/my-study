@@ -1,15 +1,25 @@
 use proconio::input;
-use array_macro::*;
+use std::io;
 
 pub fn slove() {
     // Step #1. 入力
+    println!("N, L, Kの順で入力してください");
     input! {
         n: i32,
         l: i32,
         k: i32,
     }
-    const LEN:usize = 1000000000;
-    let a: [i32; LEN] = array![1; LEN];
+    const LEN: usize = 1000000000;
+    // declear as Vec in order to avoid stack overflow
+    //let mut a: [i32; LEN] = [0; LEN];
+    let mut a = vec![0; LEN];
+
+    for i in 1..=n {
+        println!("A[{}]を入力してください", i);
+        let mut number = String::new();
+        io::stdin().read_line(&mut number).ok();
+        a[i as usize] = number.trim().parse().ok().unwrap();
+    }
 
     let is_ok = |mid| {
         let (mut cnt, mut pre) = (0, 0);
@@ -38,5 +48,5 @@ pub fn slove() {
             left = mid;
         }
     }
-    println!("{}", left);
+    println!("Answer: {}", left);
 }

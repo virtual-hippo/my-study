@@ -7,4 +7,3 @@ edition = "2021"
 
 [dependencies]
 proconio = "0.3.6"
-array-macro = "2.1.1"

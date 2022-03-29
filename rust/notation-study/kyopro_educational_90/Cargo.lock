@@ -3,16 +3,9 @@
 version = 3
 
 [[package]]
-name = "array-macro"
-version = "2.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e3910176479c9bcbaf2bd8d311e8ba806c14cc78bf5578a17e215545b4af42b2"
-
-[[package]]
 name = "kyopro_educational_90"
 version = "0.1.0"
 dependencies = [
- "array-macro",
  "proconio",
 ]
 
