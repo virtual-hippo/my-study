@@ -1,7 +1,7 @@
 use proconio::input;
 use std::io;
 
-pub fn slove() {
+pub fn solve() {
     // Step #1. 入力
     println!("N, L, Kの順で入力してください");
     input! {
