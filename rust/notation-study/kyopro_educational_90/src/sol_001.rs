@@ -8,7 +8,7 @@ struct Inputs {
     a: Vec<i32>,
 }
 
-fn solve(inputs: Inputs) {
+fn solve(inputs: Inputs) -> i32 {
     let is_ok = |mid| {
         let (mut cnt, mut pre) = (0, 0);
         for i in 1..=inputs.n {
@@ -37,6 +37,7 @@ fn solve(inputs: Inputs) {
         }
     }
     println!("Answer: {}", left);
+    left
 }
 
 pub fn call_solve() {
@@ -65,4 +66,59 @@ pub fn call_solve() {
         a: a,
     };
     solve(inputs);
+}
+
+#[cfg(test)]
+mod tests
+{
+    use super::solve;
+    use super::Inputs;
+
+    #[test]
+    fn test1() {
+        let inputs = Inputs {
+            n: 7,
+            l: 45,
+            k: 2,
+            a: vec![0, 7, 11, 16, 20, 28, 34, 38],
+        };
+        let answer = solve(inputs);
+        assert_eq!(answer, 12);
+    }
+
+    #[test]
+    fn test2() {
+        let inputs = Inputs {
+            n: 3,
+            l: 100,
+            k: 1,
+            a: vec![0, 28, 54, 81],
+        };
+        let answer = solve(inputs);
+        assert_eq!(answer, 46);
+    }
+
+    #[test]
+    fn test3() {
+        let inputs = Inputs {
+            n: 3,
+            l: 100,
+            k: 2,
+            a: vec![0, 28, 54, 81],
+        };
+        let answer = solve(inputs);
+        assert_eq!(answer, 26);
+    }
+
+    #[test]
+    fn test4() {
+        let inputs = Inputs {
+            n: 20,
+            l: 1000,
+            k: 4,
+            a: vec![0, 51, 69, 102, 127, 233, 295, 350, 388, 417, 466, 469, 523, 553, 587, 720, 739, 801, 855, 926, 954],
+        };
+        let answer = solve(inputs);
+        assert_eq!(answer, 170);
+    }
 }
