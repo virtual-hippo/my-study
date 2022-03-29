@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container-fluid px-5 py-3">
+    <div class="row">
+        <div class="col-12">
+            <h1>{{ title }}</h1>
+            <!-- update db -->
+            <!-- ToDo: update db -->
+            <!--<a class="btn btn-primary" href="/background_process_test" role="button">update db</a>-->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>prediction: {{ predict[1] }} people at {{ predict[0] }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#data-visualization" class="nav-link active" data-toggle="tab">data visualization</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#learning-curve" class="nav-link" data-toggle="tab">learning curve</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#data-table" class="nav-link" data-toggle="tab">data table</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <!-- グラフ -->
+                <!-- ToDo: グラフ描画 -->
+                <div id="data-visualization" class="tab-pane active">
+                    <script type="text/JavaScript">
+                        var graphs = {{ graph_json | safe }};
+                        Plotly.plot("data-visualization", graphs, {});
+                    </script>
+                </div>
+                <!-- 学習曲線 -->
+                <!-- ToDo: plotlyで描画 -->
+                <div id="learning-curve" class="tab-pane">
+                    <img border="0" src="./static/img/mae.png" width="784" height="784" alt="mae">
+                    <img border="0" src="./static/img/loss.png" width="784" height="784" alt="loss">
+                </div>
+                <!-- テーブル -->
+                <div id="data-table" class="tab-pane">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                {%- for col in columns %}
+                                    <th>{{ col|e }}</th>
+                                {%- endfor %}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {%- for row in values %}
+                                <tr>
+                                    <th>{{ index[loop.index0]|e }}</th>
+                                    {% for val in row %}
+                                        <td>{{ val|e }}</td>
+                                    {% endfor %}
+                                </tr>
+                            {%- endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

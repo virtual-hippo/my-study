@@ -1,0 +1,8 @@
+__pychach__/
+./log/
+*.log
+*.pyc
+app/static/
+app/static/*/
+data/
+data/*/
