@@ -12,3 +12,13 @@ This file will contain a record of My daily studies.
 - Fix kyopro_educational_90 sol_001.rs
   - I got it to work as expected!😊
   - I could create a test!😊
+- Add prediction-of-covid19-in-tokyo
+  - This is a project that I made 2 years ago.
+  - I created Dockerfile for this project today.
+  - This project have a lot of issues but I don't have the motivation to deal with those right now.😥
+
+  ## 3/30/2022
+  - Added the features to specify the question number in the command line argument!😊
+  - Learned about Pull Request by creating Pull Request!😊
+  - Learned about Enums, Crates, and Error Handling  of Rust by reading ch6, 7, 9 in https://doc.rust-lang.org/stable/book/
+    - Realized once again that I prefer output to input.😂
