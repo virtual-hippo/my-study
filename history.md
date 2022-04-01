@@ -22,3 +22,9 @@ This file will contain a record of My daily studies.
   - Learned about Pull Request by creating Pull Request!😊
   - Learned about Enums, Crates, and Error Handling  of Rust by reading ch6, 7, 9 in https://doc.rust-lang.org/stable/book/
     - Realized once again that I prefer output to input.😂
+
+## 4/1/2022
+  - Created a eepository for learning collaborative development using github!😊
+  - Learned about Sphinx.😊
+    - I'd never heard of it before.
+  - Learned about how to use docker.
