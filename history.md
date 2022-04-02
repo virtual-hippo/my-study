@@ -24,7 +24,12 @@ This file will contain a record of My daily studies.
     - Realized once again that I prefer output to input.😂
 
 ## 4/1/2022
-  - Created a eepository for learning collaborative development using github!😊
+  - Created a repository for learning collaborative development using github!😊
   - Learned about Sphinx.😊
     - I'd never heard of it before.
   - Learned about how to use docker.
+
+## 4/2/2022
+  - Created a project to implement a design pattern with Rust.
+  - I wanna learn about Rust's notation through this project!
+  - As a first step, I implemented A.
