@@ -33,3 +33,6 @@ This file will contain a record of My daily studies.
   - Created a project to implement a design pattern with Rust.
   - I wanna learn about Rust's notation through this project!
   - As a first step, I implemented A.
+
+## 4/4/2022
+  - I learned about lifetime by using toy-vec(https://github.com/ghmagazine/rustbook/tree/master/ch07/toy-vec).
