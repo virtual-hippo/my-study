@@ -36,3 +36,6 @@ This file will contain a record of My daily studies.
 
 ## 4/4/2022
   - I learned about lifetime by using toy-vec(https://github.com/ghmagazine/rustbook/tree/master/ch07/toy-vec).
+
+## 4/5/2022
+  - I copied https://github.com/ghmagazine/rustbook/blob/master/ch09/parser/src/main.rs
