@@ -42,3 +42,6 @@ This file will contain a record of My daily studies.
 
 ## 4/10/2022
   - I copied https://github.com/ghmagazine/rustbook/blob/master/ch09/parser/src/main.rs
+
+## 4/13/2022
+  - I copied https://github.com/ghmagazine/rustbook/blob/master/ch09/parser/src/main.rs
